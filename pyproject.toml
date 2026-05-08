@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cmis2c"
+version = "0.1.0"
+description = "CLI tool to parse CMIS PDF tables and generate C headers"
+authors = [{name = "User", email = "user@example.com"}]
+dependencies = [
+    "click>=8.1.0",
+    "pdfplumber>=0.9.0",
+]
+
+[project.scripts]
+cmis2c = "cmis2c.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["cmis2c*"]

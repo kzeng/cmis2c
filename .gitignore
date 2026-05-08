@@ -1,0 +1,27 @@
+# Build artifacts
+cmis2c.egg-info/
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+
+# Generated output (uncomment to track as reference)
+# cmis_low_memory.h
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# PDF input (large binary)
+*.pdf
+
+# Python
+*.egg
+dist/
+build/
